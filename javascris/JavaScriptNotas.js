@@ -1,9 +1,5 @@
-const selector = document.getElementById
-("selector");
-
-const valorDeInput = selector;
-if (valorDeInput == "juan"){
-console.log("8")
-}
-
-console.log(valorDeInput);
+function getSelectValue() {
+    const selectedValue = document.getElementById
+        ("selector").value;
+        console.log("Su nota fue un:", (selectedValue));
+    }
