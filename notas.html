@@ -10,15 +10,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>JAVA SCRI</title>
+    
+
 </head>
 
 <body>
+ 
 
   
   
   <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">"NOMBRE ESCUELA"</a>
+          <a class="navbar-brand" href="./Index.html">"NOMBRE ESCUELA"</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,24 +53,20 @@
           </div>
         </div>
       </nav>
-      <h1 class="bienvenido"> Bienvenido tutorcito :)</h1>
-
-    
-    
       <div class="notas">
-   
-        <select id="selector" onchange="getSelectValue()">
+
+      <h1> A continuacion seleccione su nombre</h1>  
+           <p> Aqui puede seleccionar su nombre y en la consola le dira su nota</p>
+        <select class="form-select" id="selector" aria-label="Default select example" onchange="getSelectValue()">
           <option selected="selected">Seleccione su nombre </option>
           <option value="8"> Juan Hernandez</option>
           <option value="5"> Pedro Nuñez</option>
           <option value="4"> Pepe Aguilar</option>
           <option value="10"> Lautaro Vazquez</option>
-          <option value="2"> Maria Ferna</option>
+          <option value="2"> Maria Fernandez</option>
         </select>
 </div>
       
-    
-    
     
 
     

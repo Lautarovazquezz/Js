@@ -6,11 +6,22 @@ class Alumno {
         this.edad = parseInt(edad)
         this.localidad = localidad
         this.nota = parseInt(nota)
-        this.materia = materia
+        
     }
 
 }
+// STORAGE
+const nombre1 = "Juan Hernandez";
+const nombre2 = "Pedri Nuñez";
+const nombre3 = "Pepe Aguilar";
+const nombre4 = "Lautaro Vazquez";
+const nombre5 = "Maria Fernandez";
 
+localStorage.setItem("Alumno 1", nombre1,);
+localStorage.setItem("Alumno 2", nombre2,);
+localStorage.setItem("Alumno 3", nombre3,);
+localStorage.setItem("Alumno 4", nombre4,);
+localStorage.setItem("Alumno 5", nombre5,);
 
 
 
@@ -28,46 +39,70 @@ console.log ("Su DNI es:",(DNI))
 alert("Los alumnos registrados son, Juan Hernandez, Pedri Nuñez, Pepe Aguilar, Lautaro Vazquez y Maria Fernandez")
 
 
-const alumno1 = new Alumno("Juan", "Hernandez", "19", "Rosario", "8", "algebra")
-const alumno2 = new Alumno("Pedri", "Nuñez", "19", "Buenos Aires", "5", "algebra")
-const alumno3 = new Alumno("Pepe", "Aguilar", "21", "Rosario", "4", "algebra")
-const alumno4 = new Alumno("Lautaro", "Vazquez", "18", "Arroyo Seco", "10", "algebra")
-const alumno5 = new Alumno("Maria", "Fernandez", "20", "Fighiera", "2", "algebra")
+const alumno1 = new Alumno("Juan", "Hernandez", "19", "Rosario", "8",)
+const alumno2 = new Alumno("Pedri", "Nuñez", "19", "Buenos Aires", "5",)
+const alumno3 = new Alumno("Pepe", "Aguilar", "21", "Rosario", "4", "")
+const alumno4 = new Alumno("Lautaro", "Vazquez", "18", "Arroyo Seco", "10",)
+const alumno5 = new Alumno("Maria", "Fernandez", "20", "Fighiera", "2",)
+
+
+
+
+
 //ALUMNO 1
 console.log (alumno1,"El pirmer alumno es"["nombre"])
 console.log (alumno1["apellido"])
 console.log (alumno1["edad"])
 console.log (alumno1["localidad"])
-console.log (alumno1["nota"])
-console.log (alumno1["materia"])
+
+// JSON
+
+const alumno1JSON = JSON.stringify(alumno1)
+console.log(alumno1JSON)
 //ALUMNO 2
 console.log (alumno2,"El pirmer alumno es"["nombre"])
 console.log (alumno2["apellido"])
 console.log (alumno2["edad"])
 console.log (alumno2["localidad"])
-console.log (alumno2["nota"])
-console.log (alumno1["materia"])
+
+// JSON
+
+const alumno2JSON = JSON.stringify(alumno2);
+console.log(alumno2JSON)
+
 //ALUMNO 3
 console.log (alumno3,"El pirmer alumno es"["nombre"])
 console.log (alumno3["apellido"])
 console.log (alumno3["edad"])
 console.log (alumno3["localidad"])
-console.log (alumno3["nota"])
-console.log (alumno1["materia"])
+
+// JSON
+
+const alumno3JSON = JSON.stringify(alumno3);
+console.log(alumno3JSON)
+
 //ALUMNO 4
 console.log (alumno4,"El pirmer alumno es"["nombre"])
 console.log (alumno4["apellido"])
 console.log (alumno4["edad"])
 console.log (alumno4["localidad"])
-console.log (alumno4["nota"])
-console.log (alumno1["materia"])
+
+// JSON
+
+const alumno4JSON = JSON.stringify(alumno4);
+console.log(alumno4JSON)
+
 //ALUMNO 5
 console.log (alumno5,"El pirmer alumno es"["nombre"])
 console.log (alumno5["apellido"])
 console.log (alumno5["edad"])
 console.log (alumno5["localidad"])
-console.log (alumno5["nota"])
-console.log (alumno1["materia"])
+
+// JSON
+
+const alumno5JSON = JSON.stringify(alumno5);
+console.log(alumno5JSON)
+
 
 
 
@@ -143,6 +178,4 @@ if (promedioAlumnos !== "si") {
 console.log("el promedio de notas entre los alumnos fue de:", (alumno1.nota + alumno2.nota + alumno3.nota + alumno4.nota + alumno5.nota) / 5);
 
 
-const selector = document.getElementById(selector);
-const valorDeInput = selector.value;
-console.log(valorDeInput)
+  
