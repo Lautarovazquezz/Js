@@ -1,6 +1,6 @@
 
 class Alumno {
-    constructor(nombre, apellido, edad, localidad, nota, materia) {
+    constructor(nombre, apellido, edad, localidad, nota,) {
         this.nombre = nombre
         this.apellido = apellido
         this.edad = parseInt(edad)
