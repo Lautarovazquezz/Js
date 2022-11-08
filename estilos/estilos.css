@@ -1,5 +1,5 @@
 .bienvenido{
-    background-color: blue;
+    background-color: rgb(178, 178, 249);
 }
 .navbar1{
     background-color: brown;
@@ -8,4 +8,17 @@
 .notas{
 margin-left: 1rem;
 margin-right: 1rem;
+}
+.div{
+    background-color: aquamarine;
+    margin: 05rem;
+    padding: 05rem;
+    text-align: center;
+    border-style: ridge;
+
+}
+.button{
+   text-align: center;
+   margin: 05rem;
+   padding: 05rem;
 }
