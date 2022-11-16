@@ -1,22 +1,36 @@
-// const formulario = document.getElementById("form")
+// // EN PROCESO DE TRABAJO
+// const formulario = document.getElementById("formulario")
 
-// formulario.addEventListener("sumbit", function(e){
-   
-//    e.preventDefault();
-//    let email = document.getElementById('email-form').value
-//     console.log("email")
-// })
-const formulario = document.getElementById("formulario")
+// // EVENTO
 
-// EVENTO
+// formulario.addEventListener("sumbit", validarFormulario)
 
-formulario.addEventListener("sumbit", validarFormulario)
+// // FUNCIONES
 
-// FUNCIONES
+// function validarFormulario(e){
+//     e.preventDefault();
+//     const nombre = document.getElementById("nombreYApelldio").value
+//     const email = document.getElementById("email").value
+//     console.log(nombreYApelldio, email)
+// }
 
-function validarFormulario(e){
-    e.preventDefault();
-    const nombre = document.getElementById("nombreYApelldio").value
-    const email = document.getElementById("email").value
-    console.log(nombreYApelldio, email)
+
+
+var AlumnosList = [];
+
+
+function addAlumnos (pid, papellido, ppais, pemail){
+
+    var newAlumnos = {
+        id: pid,
+        Apellido : papellido,
+        Pais : ppais,
+        Email : pemail
+    };
+    console.log(newAlumnos);
+    AlumnosList.push(newAlumnos)
+}
+
+function getAlumnosList(){
+    return AlumnosList;
 }

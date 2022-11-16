@@ -11,14 +11,7 @@ function getSelectValue() {
     Notification.requestPermission().then(function(result) {
         console.log(result);
       });
-
-
-
       
-     
-     
-     
-
      function mensaje_uno (){
          const enviar = document.getElementById("mensaje")
 
