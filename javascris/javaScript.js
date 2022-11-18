@@ -67,6 +67,7 @@ getDatos().then((datos) =>console.log(cursos));
 
 
 
+
 function mensaje_dos (){
     const enviar = document.getElementById("peritoCursoUno")
     document.getElementById("cursos1").innerHTML = "El precio de este curso es de $98000 y se paga a lo largo de 9 meses"

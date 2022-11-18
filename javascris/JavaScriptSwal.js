@@ -8,10 +8,6 @@ Swal.fire({
     imageAlt: 'A tall image',
     confirmButtonText: 'VAMOS!'
 
-// // }).then((result) => {
-// if(result.isConfirmed){
-//     document.getElementById("div").innerHTML = "hola buenas"
-// }
   })
 
 
