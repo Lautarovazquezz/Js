@@ -1,21 +1,4 @@
-// // EN PROCESO DE TRABAJO
-// const formulario = document.getElementById("formulario")
-
-// // EVENTO
-
-// formulario.addEventListener("sumbit", validarFormulario)
-
-// // FUNCIONES
-
-// function validarFormulario(e){
-//     e.preventDefault();
-//     const nombre = document.getElementById("nombreYApelldio").value
-//     const email = document.getElementById("email").value
-//     console.log(nombreYApelldio, email)
-// }
-
-
-
+// LOCAL STORAGE DE ALUMNOS EN EL FORMULARIO
 var AlumnosList = [];
 
 
@@ -28,9 +11,24 @@ function addAlumnos (pid, papellido, ppais, pemail){
         Email : pemail
     };
     console.log(newAlumnos);
-    AlumnosList.push(newAlumnos)
+    AlumnosList.push(newAlumnos);
+    localStorageAlumnos(AlumnosList);
 }
 
 function getAlumnosList(){
+    var storedList = localStorage.getItem('localAlumnoslist')
+    if(storedList == null){
+        AlumnosList = [];
+    }
+    if (storedList == null){}
+    else{
+        AlumnosList = JSON.parse(storedList);
+    }
+
     return AlumnosList;
+
+}
+
+function localStorageAlumnos(plist){
+    localStorage.setItem('localAlumnoslist', JSON.stringify((plist)));
 }

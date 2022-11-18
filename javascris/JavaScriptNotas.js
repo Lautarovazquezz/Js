@@ -18,3 +18,18 @@ function getSelectValue() {
    
     document.getElementById("chau").innerHTML = "El promedio de las notas de los alumnos fue de 5.7"
 }
+
+// FETCH 
+function miFuncion() 
+{
+
+   fetch('archivo.json')
+   .then(response=>response.json())
+   .then(data=>console.log(data))
+}
+
+// async function obtenerDatos(){
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users")
+//     const alumnos = await response.json()
+//     yaTieneReserva(data)
+// }

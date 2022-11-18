@@ -1,5 +1,6 @@
 .bienvenido{
-    background-color: rgb(178, 178, 249);
+    text-align: center;
+    font-family: cursive;
 }
 .navbar1{
     background-color: brown;
@@ -22,3 +23,36 @@ margin-right: 1rem;
    margin: 05rem;
    padding: 05rem;
 }
+.Registrador{
+    padding-top: 1rem;
+    margin-top: 5rem;
+    margin: 7rem;
+    background-image: url(https://media.istockphoto.com/id/1172613075/es/vector/ilustraci%C3%B3n-vectorial-de-textura-de-hoja-de-papel-de-rejilla-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=AF9ax129INE_7pZCH2-w7i9p0oOGHz-QzzN81RDm6zw=);
+    background-position: center;   
+    border-style: solid;
+}   
+.textoRegistrador{
+    text-align: center;
+}
+
+.bodi{
+    background-color: rgb(144, 172, 172);
+    border-style: solid;
+}
+
+.letras{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.promedioTitulo{
+    text-align: center;
+    padding-top: 5rem;
+}
+.centro{
+   padding-left: 51rem;
+   justify-content: center;
+}
+.separado{
+margin: 01 rem;
+padding: 01rem;
+}
+

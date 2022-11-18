@@ -33,27 +33,52 @@ const alumno5 = new Alumno("Maria", "Fernandez", "20", "Fighiera", "2",)
 
 
 
+//ARRAYS, ASYNC, PROMISE
 
-
-
-//ARRAYS
-
-const cursos = [
-    {nombre: 'Perito clasificador de granos y oleaginosos', precio: 98000},
-    {nombre: 'Ingeniero Agricola', precio: 97000},
-    {nombre: 'Ganaderia', precio: 95000},
-    {nombre: 'Ingeniero en sistemas agricolas', precio: 90000},
+const cursos = [{
+    id: 1,
+    title: 'Perito clasificador de granos y oleaginosos',
+    precio: 980000,
+    duracion: "9 meses"
+},{
+    id: 2,
+    title: 'Nutricion y alimentacion bovina',
+    precio: 97547,
+    duracion: "11 meses"
+},{
+    id: 3,
+    title: 'Produccion Organica',
+    precio: 89000,
+    duracion: "12 meses"
+}
 ]
 
-const resultado = cursos.filter((el) => el.nombre.includes('Cursos'))
-const resultado2 = cursos.filter((el) => el.precio < 100000)
+
+const getDatos = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve (cursos);
+        }, 3000);
+
+    })
+}
+
+getDatos().then((datos) =>console.log(cursos));
 
 
 
-
-
-
-
+function mensaje_dos (){
+    const enviar = document.getElementById("peritoCursoUno")
+    document.getElementById("cursos1").innerHTML = "El precio de este curso es de $98000 y se paga a lo largo de 9 meses"
+}
+function mensaje_tres (){
+    const enviar = document.getElementById("NutricionCursoDos")
+    document.getElementById("cursos2").innerHTML = "El precio de este curso es de $97547 y se paga a lo largo de 12 meses que es la duracion de la carreara"
+}
+function mensaje_cuatro (){
+    const enviar = document.getElementById("NutricionCursoDos")
+    document.getElementById("cursos3").innerHTML = "El precio de este curso es de $89000 y se paga a lo largo de 10"
+}
 
 
 const enviar = document.getElementById("mensaje")
