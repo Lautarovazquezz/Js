@@ -2,26 +2,26 @@
 var AlumnosList = [];
 
 
-function addAlumnos (pid, papellido, ppais, pemail){
+function addAlumnos(pid, papellido, ppais, pemail) {
 
     var newAlumnos = {
         id: pid,
-        Apellido : papellido,
-        Pais : ppais,
-        Email : pemail
+        Apellido: papellido,
+        Pais: ppais,
+        Email: pemail
     };
     console.log(newAlumnos);
     AlumnosList.push(newAlumnos);
     localStorageAlumnos(AlumnosList);
 }
 
-function getAlumnosList(){
+function getAlumnosList() {
     var storedList = localStorage.getItem('localAlumnoslist')
-    if(storedList == null){
+    if (storedList == null) {
         AlumnosList = [];
     }
-    if (storedList == null){}
-    else{
+    if (storedList == null) { }
+    else {
         AlumnosList = JSON.parse(storedList);
     }
 
@@ -29,6 +29,6 @@ function getAlumnosList(){
 
 }
 
-function localStorageAlumnos(plist){
+function localStorageAlumnos(plist) {
     localStorage.setItem('localAlumnoslist', JSON.stringify((plist)));
 }

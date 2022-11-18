@@ -8,10 +8,5 @@ Swal.fire({
     imageAlt: 'A tall image',
     confirmButtonText: 'VAMOS!'
 
-  })
-
-
-    
-
-
+})
 

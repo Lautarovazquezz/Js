@@ -1,24 +1,24 @@
 document.querySelector('#btnGuardar').addEventListener('click', guardarAlumno)
 tablaAlumnos();
 
-function guardarAlumno(){
+function guardarAlumno() {
     var sId = document.querySelector('#txtId').value
     var sApelido = document.querySelector('#txtApellido').value
     var sPais = document.querySelector('#txtPais').value
     var sEmail = document.querySelector('#txtEmail').value;
-    
+
     addAlumnos(sId, sApelido, sPais, sEmail);
     tablaAlumnos();
 }
 
-function tablaAlumnos(){
+function tablaAlumnos() {
     var list = getAlumnosList(),
-    tbody = document.querySelector('#alumnosTabla tbody');
+        tbody = document.querySelector('#alumnosTabla tbody');
 
 
     tbody.innerHTML = '';
-    
-    for(var i = 0; i < list.length; i++){
+
+    for (var i = 0; i < list.length; i++) {
         var row = tbody.insertRow(i),
             idCell = row.insertCell(0),
             ApellidoCell = row.insertCell(1),
@@ -32,17 +32,17 @@ function tablaAlumnos(){
         ApellidoCell.innerHTML = list[i].Apellido;
         PaisCell.innerHTML = list[i].Pais;
         EmailCell.innerHTML = list[i].Email;
-        
+
         var inputSelect = document.createElement('input');
         inputSelect.type = 'radio';
         inputSelect.value = list[i].id;
         selectCell.appendChild(inputSelect)
-        
-
-        
 
 
 
-      tbody.appendChild(row);
+
+
+
+        tbody.appendChild(row);
     }
 }

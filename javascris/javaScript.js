@@ -6,7 +6,7 @@ class Alumno {
         this.edad = parseInt(edad)
         this.localidad = localidad
         this.nota = parseInt(nota)
-        
+
     }
 
 }
@@ -40,12 +40,12 @@ const cursos = [{
     title: 'Perito clasificador de granos y oleaginosos',
     precio: 980000,
     duracion: "9 meses"
-},{
+}, {
     id: 2,
     title: 'Nutricion y alimentacion bovina',
     precio: 97547,
     duracion: "11 meses"
-},{
+}, {
     id: 3,
     title: 'Produccion Organica',
     precio: 89000,
@@ -57,33 +57,33 @@ const cursos = [{
 const getDatos = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve (cursos);
+            resolve(cursos);
         }, 3000);
 
     })
 }
 
-getDatos().then((datos) =>console.log(cursos));
+getDatos().then((datos) => console.log(cursos));
 
 
 
 
-function mensaje_dos (){
+function mensaje_dos() {
     const enviar = document.getElementById("peritoCursoUno")
     document.getElementById("cursos1").innerHTML = "El precio de este curso es de $98000 y se paga a lo largo de 9 meses"
 }
-function mensaje_tres (){
+function mensaje_tres() {
     const enviar = document.getElementById("NutricionCursoDos")
     document.getElementById("cursos2").innerHTML = "El precio de este curso es de $97547 y se paga a lo largo de 12 meses que es la duracion de la carreara"
 }
-function mensaje_cuatro (){
+function mensaje_cuatro() {
     const enviar = document.getElementById("NutricionCursoDos")
     document.getElementById("cursos3").innerHTML = "El precio de este curso es de $89000 y se paga a lo largo de 10"
 }
 
 
 const enviar = document.getElementById("mensaje")
-function mensaje_uno (){
+function mensaje_uno() {
     console.log(promedioAlumnos)
 }
 
